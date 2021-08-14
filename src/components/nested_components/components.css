@@ -1,0 +1,88 @@
+h2 {
+   font-size: 1em; 
+   line-height: 1;
+}
+h3{
+    font-size: 2em;
+    line-height: 1;
+}
+h1{
+    
+    line-height: 1;
+    font-size: 5em;
+
+}
+
+
+.contestant{
+    box-shadow: -4px 5px 4px #000000a6;
+    margin-left: 3em;
+    margin-right: 3em;
+    color: white;
+    margin-top: 2em;
+    padding: 2px;
+    background: #D43545;
+    border-radius: 10px;
+    width: 90%;
+}
+main {
+    background: #3D5467;
+    min-height: 65vh;
+    height: fit-content;
+}
+#RegionSelect{
+    font-size: 2em;
+    width: 60%;
+    height: 2em;
+    margin-top: 20px;
+    border-radius: 0.5em;
+    text-align-last: center;
+}
+#LoadingBraketContainer::before{
+    content:"";
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    border-top-color: red;
+    animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+.stage{
+    min-width: 27%;
+    margin: 1.5%;
+    height: 835px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    box-shadow: -8px 15px 4px #000000ba;
+}
+
+
+#Final{
+
+    background: gold;
+
+}
+#SemiFinal{
+    background: silver;
+}
+#CuartosDeFinal{
+    background: #cd7f32;
+}
